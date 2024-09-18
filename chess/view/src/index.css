@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.main {
+  display: inline-block;
+  position: relative;
+  margin: 2px auto;
+  padding: 50px;
+  background: #666;
+}
+.pieces {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  font-size: 48px;
+  line-height: 80px;
+  text-align: center;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.pieces--red {
+  background-color: firebrick;
+}
+.pieces--blue {
+  background-color: aqua;
+}
+.pieces--focus {
+  outline: yellow solid 2px;
+}
+.broad {
+  /* position: absolute;
+  top: 40px;
+  left: 40px; */
+  width: 729px;
+  height: 820px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.broad-red {
+  background-color: violet;
+}
+.broad-blue {
+  background-color: aqua;
+}
+.block {
+  width: 90px;
+  height: 90px;
+  border-top: 1px solid #333;
+  border-left: 1px solid #333;
+}
+
+.block:nth-of-type(8n) {
+  border-right: 1px solid #333;
+}
+.block:nth-of-type(n + 65) {
+  border-bottom: 1px solid #333;
+}
+
+.block:nth-of-type(4)::after {
+  content: "";
+  display: block;
+  width: 128px;
+  height: 128px;
+  border-top: 1px solid #333;
+  border-right: 1px solid #333;
+  transform: rotate(45deg);
+  transform-origin: 0 0;
+}
+.block:nth-of-type(6)::after {
+  content: "";
+  display: block;
+  width: 128px;
+  height: 128px;
+  border-bottom: 1px solid #333;
+  border-left: 1px solid #333;
+  transform: rotate(45deg);
+  transform-origin: 0 0;
+}
+.block:nth-of-type(60)::after {
+  content: "";
+  display: block;
+  width: 128px;
+  height: 128px;
+  border-top: 1px solid #333;
+  border-right: 1px solid #333;
+  transform: rotate(45deg);
+  transform-origin: 0 0;
+}
+.block:nth-of-type(62)::after {
+  content: "";
+  display: block;
+  width: 128px;
+  height: 128px;
+  border-bottom: 1px solid #333;
+  border-left: 1px solid #333;
+  transform: rotate(45deg);
+  transform-origin: 0 0;
+}
+
+.block:nth-of-type(34),
+.block:nth-of-type(35),
+.block:nth-of-type(36),
+.block:nth-of-type(37),
+.block:nth-of-type(38),
+.block:nth-of-type(39),
+.block:nth-of-type(40) {
+  border-left: none;
+}
+
+.block:nth-of-type(40) {
+  width: 97px;
+}
+
+.block:nth-of-type(34)::after {
+  content: "楚";
+  padding: 0 20px;
+  font-size: 60px;
+  line-height: 90px;
+}
+.block:nth-of-type(35)::after {
+  content: "河";
+  padding: 0 20px;
+  font-size: 60px;
+  line-height: 90px;
+}
+.block:nth-of-type(38)::after {
+  content: "界";
+  display: block;
+  padding: 0 20px;
+  font-size: 60px;
+  line-height: 90px;
+  transform: rotate(180deg);
+}
+.block:nth-of-type(39)::after {
+  content: "漢";
+  display: block;
+  padding: 0 20px;
+  font-size: 60px;
+  line-height: 90px;
+  transform: rotate(180deg);
+}
