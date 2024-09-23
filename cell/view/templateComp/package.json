@@ -1,0 +1,11 @@
+{
+  "name": "care",
+  "version": "1.0.0",
+  "description": "",
+  "main": "care.js",
+  "bin": {
+    "care": "./care.js"
+  },
+  "author": "",
+  "license": "ISC"
+}

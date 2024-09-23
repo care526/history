@@ -1,0 +1,25 @@
+p {
+  margin-bottom: 0;
+}
+.ant-picker-input > input {
+  text-align: center;
+}
+.ant-tabs-top > .ant-tabs-nav,
+.ant-tabs-bottom > .ant-tabs-nav,
+.ant-tabs-top > div > .ant-tabs-nav,
+.ant-tabs-bottom > div > .ant-tabs-nav {
+  margin: 0;
+}
+.ant-tabs,
+.ant-tabs-content-holder,
+.ant-tabs-content,
+.ant-tabs-tabpane {
+  height: 100%;
+}
+.ant-menu-item:first-of-type {
+  margin-top: 0;
+}
+
+.gantt_container {
+  height: 100%;
+}

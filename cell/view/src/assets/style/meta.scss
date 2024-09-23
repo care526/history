@@ -1,0 +1,66 @@
+// 定位
+*[data-fl], .fl { float: left; }
+*[data-fr], .fr { float: right; }
+*[data-ps_r], .ps_r { position: relative; }
+*[data-ps_a], .ps_a { position: absolute; }
+*[data-ps_f], .ps_f { position: fixed; }
+
+// 盒模型
+*[data-dp_n], .dp_n { display: none; }
+*[data-dp_i], .dp_i { display: inline; }
+*[data-dp_b], .dp_b { display: block; }
+*[data-dp_ib], .dp_ib { display: inline-block; }
+
+// 布局
+*[data-fx], .fx { display: flex; }
+*[data-row], .row {
+	display: flex;
+	align-items: center;
+}
+*[data-row_space], .row_space {
+	justify-content: space-between;
+}
+*[data-column], .column {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+@for $num from 1 through 100 {
+	*[data-pd_#{$num}], .pd_#{$num} { padding: #{$num}px; }
+	*[data-pd_h#{$num}], .pd_h#{$num} { padding-left: #{$num}px; padding-right: #{$num}px; }  // horizontal 横
+	*[data-pd_v#{$num}], .pd_v#{$num} { padding-top: #{$num}px; padding-bottom: #{$num}px; }  // vertical 竖
+	*[data-pd_t#{$num}], .pd_t#{$num} { padding-top: #{$num}px; }
+	*[data-pd_b#{$num}], .pd_b#{$num} { padding-bottom: #{$num}px; }
+	*[data-pd_l#{$num}], .pd_l#{$num} { padding-left: #{$num}px; }
+	*[data-pd_r#{$num}], .pd_r#{$num} { padding-right: #{$num}px; }
+
+	*[data-mr#{$num}], .mr_#{$num} { margin: #{$num}px; }
+	*[data-mr_h#{$num}], .mr_h#{$num} { margin-left: #{$num}px; margin-right: #{$num}px; }  // horizontal 横
+	*[data-mr_v#{$num}], .mr_v#{$num} { margin-top: #{$num}px; margin-bottom: #{$num}px; }  // vertical 竖
+	*[data-mr_t#{$num}], .mr_t#{$num} { margin-top: #{$num}px; }
+	*[data-mr_b#{$num}], .mr_b#{$num} { margin-bottom: #{$num}px; }
+	*[data-mr_l#{$num}], .mr_l#{$num} { margin-left: #{$num}px; }
+	*[data-mr_r#{$num}], .mr_r#{$num} { margin-right: #{$num}px; }
+}
+
+// 排版
+@for $num from 1 through 100 {
+	*[data-fs#{$num}], .fs#{$num} { font-size: #{$num}px; }
+	*[data-lh#{$num}], .lh#{$num} { line-height: #{$num}px; }
+}
+*[data-fw], .fw { font-weight: bold; }
+*[data-fwer], .fwer { font-weight: bolder; }
+@each $color in #999, #666, #333 {
+//   *[data-cr#{$color}], .cr#{$color} { color: #{$color}; }
+}
+@each $num in 400, 500, 600, 700, 800, 900 {
+  *[data-fw#{$num}], .fw#{$num} { font-weight: #{$num}; }
+}
+*[data-ta_l], .ta_l { text-align: left; }
+*[data-ta_c], .ta_c { text-align: center; }
+*[data-ta_r], .ta_r { text-align: right; }
+
+
+// @each $position in left, center, right {
+// }

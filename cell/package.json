@@ -1,0 +1,8 @@
+{
+  "scripts": {
+    "init": "bash ./init.sh",
+    "runImg": "docker run -d --name=cell -p 4000:4000 care/cell",
+    "buildImg": "docker build -t care/cell .",
+    "clear": "docker stop cell && docker rm cell && docker rmi care/cell"
+  }
+}
